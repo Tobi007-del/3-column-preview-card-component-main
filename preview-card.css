@@ -1,0 +1,134 @@
+body{
+  width: 100vw;
+  height: 100vh; 
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  padding-top: 10vh;
+}
+#content{
+  display: flex;
+  width: 65vw;
+  border-radius: 0.5vw;
+}
+.sub-content{
+  width: 21.7vw;
+  height: 32.5vw;
+  padding: 3.5vw 3vw 3vw 3vw;
+}
+p{
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: white;
+}
+.big-text{
+  font-size: 3vw;
+  font-weight: bold;
+  letter-spacing: 0;
+  margin: 2vw 0 1.5vw 1vw;
+}
+.small-text{
+  font-size: 1.15vw;
+  line-height: 1.85vw;
+  word-spacing: 0.15vw;
+  opacity: 0.7;
+}
+#sedan{
+    color: hsl(31, 77%, 52%);
+}
+#sedan:hover{
+    background-color: hsl(31, 77%, 52%);
+    color: white;
+}
+#suv{
+    color: hsl(184, 100%, 22%);
+}
+#suv:hover{
+    background-color: hsl(184, 100%, 22%);
+    color: white;
+}
+#lux{
+    color: hsl(179, 100%, 13%);
+}
+#lux:hover{
+    background-color: hsl(179, 100%, 13%);
+    color: white;
+}
+#sedans{
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 0.5vw 0 0 0.5vw;
+}
+#suvs{
+    background-color: hsl(184, 100%, 22%);
+}
+#luxury{
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0 0.5vw 0.5vw 0;
+}
+button{
+    line-height: 3.5vw;
+    width: 13.5vw;
+    border: none;
+    border-radius: 1.75vw;
+    font-size: 1.2vw;
+    letter-spacing: 0.1vw;
+    word-spacing: 0.2vw;
+    font-weight: bold;
+    margin-top: 4vw;
+    background-color: hsl(0, 0%, 100);
+}
+button:hover{
+  border: 0.1vw solid white;
+  color: white;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+@media(max-width: 480px){
+  body{
+    width: 100%;
+    height: 100vh;
+    overflow-y: scroll;
+    margin: 0;
+    padding: 0;
+  }
+  #content{
+    width: 80%;
+    margin: 15% 10% 0 10%;
+    display: block;
+  }
+  .sub-content{
+    max-width: 80%;
+    width: 80%;
+    height: 50vh;
+    padding: 5.5vh 8vw 3vh 8vw;
+  }
+  .big-text{
+    font-size: 4vh;
+    letter-spacing: 0;
+    margin: 5vh 0 1.5vh 1vh;
+  }
+  .small-text{
+    font-size: 1.6vh;
+    line-height: 3vh;
+    word-spacing: 0.1vh;
+    letter-spacing: 0.1vh;
+    margin: 5vh 3vw 3vh 3vw;
+  }
+  button{
+    line-height: 5.5vh;
+    width: 37.5vw;
+    border-radius: 2.75vh;
+    font-size: 1.5vh;
+    letter-spacing: 0.1vh;
+    word-spacing: 0.2vh;
+    margin-top: 2vh;
+}
+#sedans{
+  border-radius: 1vh 1vh 0 0;
+}
+#luxury{
+  border-radius: 0 0 1vh 1vh;
+}
+}
